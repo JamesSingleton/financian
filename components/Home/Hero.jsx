@@ -1,15 +1,21 @@
 import Image from 'next/image';
 
-const Hero = ({lightBackground}) => {
+const Hero = ({lightBackground, imageSrc}) => {
   return (
-    <section className={ lightBackground ? 'bg-white h-96' : 'bg-gray-900 h-96'}>
-      <div className="container">
-      <Image
-        src="/static/svg/undraw_Credit_card_re_blml.svg"
-        alt="Picture of the author"
-        width={350}
-        height={350}
-      />
+    <section className={ lightBackground ? 'bg-white' : 'bg-gray-900'}>
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <span className="block">Ready to dive in?</span>
+          <span className="block text-indigo-600">Start your free trial today.</span>
+        </h2>
+        <div className="mt-8 lex lg:mt-0 lg:flex-shrink-0">
+          <Image
+            src={imageSrc}
+            alt="Picture of the author"
+            width={350}
+            height={350}
+          />
+        </div>
       </div>
     </section>
   )

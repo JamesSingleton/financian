@@ -11,9 +11,10 @@ const Index = () => (
       url={WEBSITE_URL}
       description={WEBSITE_DESCRIPTION}
     />
-    <Hero lightBackground={true} />
-    <Hero lightBackground={false}/>
-    <Hero lightBackground={true} />
+    <Hero 
+      lightBackground={true} 
+      imageSrc="/static/svg/undraw_Credit_card_re_blml.svg"
+    />
   </Page>
 );
 
