@@ -70,12 +70,12 @@ const Header = () => {
             </div>
             <div className="mt-6">
               <nav className="grid gap-y-8">
-                <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                <a href="/services" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                   <span className="text-base font-medium text-gray-900">
                     Services
                   </span>
                 </a>
-                <a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                <a href="/products" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                   <span className="text-base font-medium text-gray-900">
                     Products
                   </span>
