@@ -13,8 +13,22 @@ const Index = () => (
       description={WEBSITE_DESCRIPTION}
     />
     <Hero 
-      lightBackground={true} 
-      imageSrc="/static/svg/undraw_Credit_card_re_blml.svg"
+      lightBackground={true}
+      lightText={false}
+      imageFirst={true}
+      imageSrc="/static/svg/undraw_Credit_card.svg"
+    />
+    <Hero 
+      lightBackground={false}
+      lightText={true}
+      imageFirst={false}
+      imageSrc="/static/svg/undraw_pay_online.svg"
+    />
+    <Hero 
+      lightBackground={true}
+      lightText={false}
+      imageFirst={true}
+      imageSrc="/static/svg/undraw_personal_finance.svg"
     />
     <Pricing />
   </Page>

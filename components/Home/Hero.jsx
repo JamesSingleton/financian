@@ -1,20 +1,41 @@
 import Image from 'next/image';
+import classNames from 'classnames';
 
-const Hero = ({lightBackground, imageSrc}) => {
+const Hero = ({lightBackground, lightText, imageSrc, imageFirst}) => {
+  const backgroundClass = classNames({
+    'text-gray-700 body-font': true,
+    'bg-white': lightBackground,
+    'bg-gray-900': !lightBackground
+  });
+
+  const containerClass = classNames({
+    'container mx-auto flex px-5 py-24 items-center': true,
+    'md:flex-row flex-col': imageFirst,
+    'flex-row-reverse': !imageFirst
+  });
+
+  const headingClass = classNames({
+    'text-3xl font-extrabold tracking-tight  sm:text-4xl': true,
+    'text-gray-900': !lightText,
+    'text-gray-100': lightText
+  })
+
   return (
-    <section className={ lightBackground ? 'bg-white' : 'bg-gray-900'}>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          <span className="block">Ready to dive in?</span>
-          <span className="block text-indigo-600">Start your free trial today.</span>
-        </h2>
-        <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+    <section className={backgroundClass}>
+      <div className={containerClass}>
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <Image
             src={imageSrc}
             alt="Picture of the author"
             width={350}
             height={350}
           />
+        </div>
+        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col items-left text-left">
+          <h2 className={headingClass}>
+            <span className="block">Ready to dive in?</span>
+            <span className="block text-indigo-600">Start your free trial today.</span>
+          </h2>
         </div>
       </div>
     </section>
