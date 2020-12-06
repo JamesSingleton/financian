@@ -2,6 +2,7 @@ import Page from '@/components/Layout/Page';
 import Hero from '@/components/Home/Hero'
 import SocialMeta from '@/components/SocialMeta';
 import { WEBSITE_NAME, WEBSITE_TITLE, WEBSITE_DESCRIPTION, WEBSITE_URL } from '@/lib/constants';
+import Pricing from '@/components/Pricing'
 
 const Index = () => (
   <Page>
@@ -15,6 +16,7 @@ const Index = () => (
       lightBackground={true} 
       imageSrc="/static/svg/undraw_Credit_card_re_blml.svg"
     />
+    <Pricing />
   </Page>
 );
 

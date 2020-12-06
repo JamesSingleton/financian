@@ -8,7 +8,7 @@ const Hero = ({lightBackground, imageSrc}) => {
           <span className="block">Ready to dive in?</span>
           <span className="block text-indigo-600">Start your free trial today.</span>
         </h2>
-        <div className="mt-8 lex lg:mt-0 lg:flex-shrink-0">
+        <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
           <Image
             src={imageSrc}
             alt="Picture of the author"
