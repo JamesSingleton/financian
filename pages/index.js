@@ -1,5 +1,8 @@
 import Page from '@/components/Layout/Page';
+import SectionItem from '@/components/Home/SectionItem'
 import Hero from '@/components/Home/Hero'
+import Features from '@/components/Home/Features'
+import Testimonials from '@/components/Home/Testimonials'
 import SocialMeta from '@/components/SocialMeta';
 import { WEBSITE_NAME, WEBSITE_TITLE, WEBSITE_DESCRIPTION, WEBSITE_URL } from '@/lib/constants';
 import Pricing from '@/components/Pricing'
@@ -12,24 +15,8 @@ const Index = () => (
       url={WEBSITE_URL}
       description={WEBSITE_DESCRIPTION}
     />
-    <Hero 
-      lightBackground={true}
-      lightText={false}
-      imageFirst={true}
-      imageSrc="/static/svg/undraw_Credit_card.svg"
-    />
-    <Hero 
-      lightBackground={false}
-      lightText={true}
-      imageFirst={false}
-      imageSrc="/static/svg/undraw_pay_online.svg"
-    />
-    <Hero 
-      lightBackground={true}
-      lightText={false}
-      imageFirst={true}
-      imageSrc="/static/svg/undraw_personal_finance.svg"
-    />
+    <Hero />
+    <Features />
     <Pricing />
   </Page>
 );
