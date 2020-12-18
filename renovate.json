@@ -9,6 +9,8 @@
   "vulnerabilityAlerts": {
     "enabled": true
   },
+  "prCreation": "not-pending",
+  "pinDependencies": false,
   "packageRules": [
     {
       "groupName": "devDependencies (major)",
