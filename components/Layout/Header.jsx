@@ -13,9 +13,15 @@ const Header = () => {
     hidden: !navbarOpen
   });
 
+  const openBorrowMenu = (event) => {
+    event.stopPropagation();
+    setBorrowOpen(!borrowOpen);
+  }
+
   useLayoutEffect(() => {
     const listener = event => {
-      if (event.target.parentElement !== borrowButtonRef.current) {
+      
+      if (event.target !== borrowButtonRef.current) {
         setBorrowOpen(false)
       }
     }
@@ -44,7 +50,7 @@ const Header = () => {
           </div>
           <nav className="hidden md:flex space-x-10">
             <div className="relative">
-              <button ref={borrowButtonRef} type="button" onClick={() => setBorrowOpen(!borrowOpen)} className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              <button ref={borrowButtonRef} type="button" onClick={(event) => openBorrowMenu(event)} className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 <span className="uppercase">Borrow</span>
                 <svg className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -91,7 +97,7 @@ const Header = () => {
             <a href="#" className="text-base font-medium uppercase text-gray-500 hover:text-gray-900">
                 For Banks
             </a>
-            <a href="#" className="text-base font-medium uppercase text-gray-500 hover:text-gray-900">
+            <a href="/about" className="text-base font-medium uppercase text-gray-500 hover:text-gray-900">
               About
             </a>
           </nav>
