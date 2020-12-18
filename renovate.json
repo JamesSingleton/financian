@@ -3,14 +3,14 @@
     "config:base",
     ":rebaseStalePrs",
     ":automergeMinor",
-    ":separateMajorReleases"
+    ":separateMajorReleases",
+    ":preserveSemverRanges"
   ],
   "semanticCommits": true,
   "vulnerabilityAlerts": {
     "enabled": true
   },
   "prCreation": "not-pending",
-  "pinDependencies": false,
   "packageRules": [
     {
       "groupName": "devDependencies (major)",
