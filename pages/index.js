@@ -11,7 +11,7 @@ import Steps from '@/components/Home/Steps';
 const Index = () => (
   <Page>
     <SocialMeta 
-      image="/static/twitter-cards/home.jpg"
+      image="/static/twitter-cards/hero-image.webp"
       title={`Home | ${WEBSITE_NAME} - ${WEBSITE_TITLE}`}
       url={WEBSITE_URL}
       description={WEBSITE_DESCRIPTION}
