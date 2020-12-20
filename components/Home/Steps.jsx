@@ -4,8 +4,9 @@ const Steps = () => (
   <section className="text-gray-700 body-font">
     <div className="container px-5 py-24 mx-auto flex flex-wrap">
       <div className="flex flex-wrap w-full">
-        <div className="lg:w-3/5 md:w-1/2 rounded-lg md:mt-0 mt-12 hidden md:block">
-          <Image 
+        <div className="lg:w-3/5 md:w-1/2 md:mt-0 mt-12 hidden md:block">
+          <Image
+            className="rounded-md h-full"
             src="/static/images/writing-with-phone.jpeg"
             width={1080}
             height={720}

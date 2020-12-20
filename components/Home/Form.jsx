@@ -2,14 +2,14 @@ import { useState } from 'react';
 const Form = () => {
   const [isOpen, setIsOpen ] = useState(false)
   return (
-    <div className="bg-gray-100 rounded-xl px-12 pt-14 pb-6 shadow-md flex flex-col items-center">
+    <div className="bg-gray-100 rounded-xl px-12 pt-14 pb-6 shadow-md flex flex-col items-center text-center">
       <div className="mb-8 w-full">
-        <h2 className="text-5xl mb-4">You are more than a credit score.</h2>
-        <h3 className="px-14 text-xl leading-8">Fair & fast online loans from <span>$1,000 - $50,000</span></h3>
+        <h2 className="font-medium text-3xl md:text-5xl mb-4">You are more than just a credit score</h2>
+        <h3 className="md:px-14 text-xl leading-8">Fair & fast online loans from <span>$1,000 - $50,000</span></h3>
       </div>
       <div className="w-80">
-        <label id="listbox-label" className="block text-sm font-medium text-gray-700">
-          I would like to
+        <label id="listbox-label" className="block text-sm font-medium text-left text-gray-700">
+          I want to
         </label>
         <div className="mt-1 relative mb-2">
           <button type="button" onClick={() => setIsOpen(!isOpen)} aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label" className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
@@ -25,7 +25,7 @@ const Form = () => {
             </span>
           </button>
           {isOpen && (
-            <div className="absolute mt-1 w-full rounded-md bg-white shadow-lg">
+            <div className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10">
             <ul tabIndex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-item-3" className="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
               <li id="listbox-item-0" role="option" className="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9">
                 <div className="flex items-center">
@@ -44,7 +44,7 @@ const Form = () => {
           )}
         </div>
         <div className="inline-block text-center relative w-full">
-          <button className="uppercase flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">check your rate</button>
+          <button className="uppercase font-medium flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">check your rate</button>
           <div className="font-sm mt-2">
             <svg className="w-4 h-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
