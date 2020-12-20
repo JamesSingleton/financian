@@ -6,6 +6,7 @@ import Testimonials from '@/components/Home/Testimonials'
 import SocialMeta from '@/components/SocialMeta';
 import { WEBSITE_NAME, WEBSITE_TITLE, WEBSITE_DESCRIPTION, WEBSITE_URL } from '@/lib/constants';
 import Pricing from '@/components/Pricing'
+import Steps from '@/components/Home/Steps';
 
 const Index = () => (
   <Page>
@@ -16,6 +17,7 @@ const Index = () => (
       description={WEBSITE_DESCRIPTION}
     />
     <Hero />
+    <Steps />
     <Features />
     <Pricing />
   </Page>
