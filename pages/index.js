@@ -4,6 +4,7 @@ import Hero from '@/components/Home/Hero'
 import SocialMeta from '@/components/SocialMeta';
 import Steps from '@/components/Home/Steps';
 import Features from '@/components/Home/Features'
+import InTheNews from '@/components/Home/InTheNews';
 
 const Index = () => (
   <Page>
@@ -15,6 +16,7 @@ const Index = () => (
     />
     <Hero />
     <Features />
+    <InTheNews />
     <Steps />
   </Page>
 );

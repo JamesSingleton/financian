@@ -4,8 +4,8 @@ const Features = () => (
   <section className="text-gray-400 bg-gray-900 body-font">
     <div className="container px-5 py-24 mx-auto">
       <div className="text-center mb-20">
-        <h2 className="sm:text-3xl text-2xl font-medium title-font text-white mb-4">
-          Fair & fast personal loans
+        <h2 className="sm:text-3xl text-4xl font-medium title-font text-white mb-4">
+          <em>Fair & fast</em> personal loans
         </h2>
       </div>
       <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
