@@ -1,4 +1,7 @@
 module.exports = {
+  productionBrowserSourceMaps: true,
+  swcMinify: true,
+  reactStrictMode: true,
   images: {
     domains: ['dummyimage.com'],
   },

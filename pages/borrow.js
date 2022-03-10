@@ -1,4 +1,4 @@
-import Page from '@/components/Layout/Page';
+import Page from '@/components/Layout/Page'
 import { WEBSITE_NAME } from '@/lib/constants'
 
 const Services = () => (
@@ -7,4 +7,4 @@ const Services = () => (
   </Page>
 )
 
-export default Services;
+export default Services

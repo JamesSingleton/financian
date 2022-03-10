@@ -1,4 +1,4 @@
-import Page from '@/components/Layout/Page';
+import Page from '@/components/Layout/Page'
 import { WEBSITE_NAME } from '@/lib/constants'
 
 const Products = () => (
@@ -7,4 +7,4 @@ const Products = () => (
   </Page>
 )
 
-export default Products;
+export default Products

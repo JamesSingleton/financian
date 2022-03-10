@@ -5,20 +5,27 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "prettier-fix": "prettier --write ."
   },
   "dependencies": {
-    "autoprefixer": "^10.1.0",
-    "next": "^11.0.0",
-    "postcss": "^8.2.1",
+    "next": "^12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.1.0",
-    "tailwindcss": "^2.0.2"
+    "react-icons": "^4.3.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.0.0",
-    "@commitlint/config-conventional": "^12.0.0",
-    "husky": "^6.0.0"
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.10.0",
+    "eslint-config-next": "^12.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^7.0.4",
+    "postcss": "^8.4.8",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.8",
+    "tailwindcss": "^3.0.23"
   }
 }

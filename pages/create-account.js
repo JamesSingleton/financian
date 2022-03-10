@@ -1,4 +1,4 @@
-import Page from '@/components/Layout/Page';
+import Page from '@/components/Layout/Page'
 import { WEBSITE_NAME } from '@/lib/constants'
 
 const CreateAccount = () => (
@@ -7,4 +7,4 @@ const CreateAccount = () => (
   </Page>
 )
 
-export default CreateAccount;
+export default CreateAccount

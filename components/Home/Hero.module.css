@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../../public/static/images/hero-image.jpg");
+  background-image: url('../../public/static/images/hero-image.jpg');
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
